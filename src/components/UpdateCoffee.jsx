@@ -20,7 +20,7 @@ const UpdateCoffee = () => {
   const updateCoffeeHandler = (event) => {
     event.preventDefault();
 
-    fetch(`http://localhost:5000/coffees/${_id}`, {
+    fetch(`http://localhost:5001/coffees/${_id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",

@@ -8,13 +8,13 @@ const CoffeeItem = ({ coffee, coffees, setCoffees }) => {
   const deleteHandler = (id) => {
     const agree = window.confirm("Are you want to delete?");
     if (agree) {
-      fetch(`http://localhost:5000/coffees/${id}`, {
+      fetch(`http://localhost:5001/coffees/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount > 0) {
-            toast.success("🦄 Coffee deleted successfully!", {
+            toast.success("Coffee deleted successfully!", {
               position: "top-center",
               autoClose: 2000,
             });

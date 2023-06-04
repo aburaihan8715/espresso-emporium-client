@@ -7,7 +7,7 @@ const CoffeeList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/coffees")
+    fetch("http://localhost:5001/coffees")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

@@ -18,7 +18,7 @@ const AddCoffee = () => {
   const addCoffeeHandler = (event) => {
     event.preventDefault();
     // console.log(coffeeInfo);
-    fetch("http://localhost:5000/coffees", {
+    fetch("http://localhost:5001/coffees", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
