@@ -7,7 +7,7 @@ const CoffeeList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5001/coffees")
+    fetch("https://espresso-emporium-server-xi.vercel.app/coffees")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

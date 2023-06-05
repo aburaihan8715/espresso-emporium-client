@@ -8,7 +8,7 @@ const CoffeeItem = ({ coffee, coffees, setCoffees }) => {
   const deleteHandler = (id) => {
     const agree = window.confirm("Are you want to delete?");
     if (agree) {
-      fetch(`http://localhost:5001/coffees/${id}`, {
+      fetch(`https://espresso-emporium-server-xi.vercel.app/coffees/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
